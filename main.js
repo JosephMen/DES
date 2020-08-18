@@ -299,7 +299,6 @@ function CajasS(lista){
         Acumulada = []
         nueva = Recortar_6_Digitos(lista, 1)
         Acumulada = Acumulada.concat(Caja(nueva, S1))
-        console.log(Acumulada)
 
         nueva = Recortar_6_Digitos(lista, 2)
         Acumulada = Acumulada.concat(Caja(nueva, S2))
@@ -323,21 +322,18 @@ function CajasS(lista){
         Acumulada = Acumulada.concat(Caja(nueva, S8))
         i = i + 1
     }
-    return Acumulada
+    console.log(Acumulada.join(''))
+    return Acumulada.join('')
 }
 
 function Caja(lista, S){
-    console.log(lista)
     fila = 0
     fila = buscarFila([lista[0]] + [lista[-1]])
-    console.log(fila)
-    //columna = buscarColumna([lista[1]] + [lista[2]] + [lista[3]] + [lista[4]])
     columna = buscarColumna(lista)
-    console.log(columna)
     NumerosBin = [['0','0','0','0'],['0','0','0','1'],['0','0','1','0'],['0','0','1','1'],['0','1','0','0'],['0','1','0','1'],['0','1','1','0'],['0','1','1','1'],['1','0','0','0'],['1','0','0','1'],['1','0','1','0'],['1','0','1','1'],['1','1','0','0'],['1','1','0','1'],['1','1','1','0'],['1','1','1','1']]
     pos = S[fila][columna]
     nueva = []
-    nueva = nueva + NumerosBin[pos]
+    nueva = nueva.concat(NumerosBin[pos])
     return (nueva)
 }
  
@@ -403,4 +399,30 @@ function Recortar_6_Digitos (lista, num){
 }
     
 
-console.log(CajasS(resXOR))
+var ResCajas = CajasS(resXOR)
+
+//Ultima mastriz Matriz P recibe el resultado de la funcion CajasS(resXOR)
+function MatrizP(lista){
+    i = 0
+    nueva = []
+    while (i < 1){
+        nueva.push(MatrizPAux(lista))
+        i = i + 1
+    } 
+    return (nueva)
+}
+    
+        
+function MatrizPAux(lista){
+    listaP = [16,7,20,21,29,12,28,17,1,15,23,26,5,18,31,10,2,8,24,14,32,27,3,9,19,13,30,6,22,11,4,25]
+    nueva = []
+    i = 0
+    while(i < listaP.length){
+        nueva.push(lista[listaP[i]-1])
+        i = i + 1
+    }   
+    console.log(nueva)
+    return nueva
+}
+    
+MatrizP(ResCajas)
