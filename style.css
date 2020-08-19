@@ -1,54 +1,48 @@
-#entradas {
-    background-color: chartreuse;
-}
-input[type = button]{
-    background: rgb(28, 184, 65);
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
-    width: 325px;
-}
-input[type = text]{
-    color: black;
-    padding: 10x;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
+#clave {
+    margin-left: 20px;
 }
 
-.entrys{
-    color: black;
-    padding: 35px;
-    
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+.table{
+    border : solid #000
+}
+.salida_binaria {
+    margin-left: 50px;
 }
 
-.grid_pc{
-    background-color: darkgray;
-    align-content: center;
-    width: 100%;
-    /* display: grid; */
-    /* grid-template-columns: auto auto auto; */
-    /* align-content: center; */
-    /* padding: 30px; */
-    
+.lbl_entrada{
+    font-weight: bold;
 }
+
+.procesar {
+    width: 200px;
+
+}
+.col-6{
+    margin-bottom : 50px;
+}
+
+.select_rotacion {
+    width: 200px;
+    height: 50px;
+}
+
 table{
     padding: 10px;
     width: 400px;
     text-align: center;
-    border: black solid;
 }
 td{
     border: black solid;
 }
+
+#KiRes{
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/*
 #rotacionKI{
     background-color: lightcoral;
-}
+}  */
 

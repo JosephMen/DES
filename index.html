@@ -5,285 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto DES</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-    <p>Proyecto DES: Frander Mena y Keyla Alvarez Desanti</p>
-    <div id="entradas">
-        <form >
-            <label for="Entrada" class = "entrys">Entrada</label>
-            <label for="Clave" class = "entrys">Clave</label><br>
-            <input type="text" id = "entrada" name = "entrada">
-            <input type="text" id = "clave" name = "clave"><br>
-            <input type="button" value="Procesar" id = "procesar">
+    <div class="container">
+        <p>Proyecto DES: Frander Mena y Keyla Alvarez Desanti</p>
+        <div id="entradas" class="row">
+            <div class="col-6 ">
+                <form >
+                    <label for="Entrada" class = "entrys lbl_entrada" id="mensaje">Mensaje</label>
+                    <input type="text" name="" id="entrada">
+                    <label class = "salida_binaria"> Mensaje en Binario</label>
+                    <br>
+
+                    <label for="Entrada" class = "entrys lbl_entrada">Clave</label>
+                    <input type="text" name="" id="clave">
+                    <label class = "salida_binaria" > Clave en Binario</label> <br>
+                    <div class="text-center" style="margin-top: 10px;">
+                        <input type="button" class = "btn btn-success procesar mx-auto" value="Procesar" id = "procesar">
+                    </div>
+                    
     
-        </form>
-    </div>
+                    <!-- <label for="" id = "salidaMensaje">Aqui va la salida del mensaje</label>
+                    <label for="" id = "salidaClave"> Aqui va la salida de la clave</label> -->
+    
+                </form>
+            </div>
+            
+        </div>
 
-    <div class = "grid_pc" id = "pc0" >
-        <table id = "pc0">
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id = "rotacionKI">
-        <select name="rotacion" id="rotacionesDb" onchange="cambioDropBoxRotaciones()">
-            <option value="1" > Rotacion 1</option>
-            <option value="2"> Rotacion 2</option>
-            <option value="3"> Rotacion 3</option>
-            <option value="4"> Rotacion 4</option>
-        </select>
-    <label for="" id = "rotacionElegida"> Esta es la rotacion elegida: </label>
-
-    <br>
-    <label for="" id = "CI">CI:  </label>
-    <label for="" id = "DI">DI:  </label>
-    <br>
-    <div style="display: grid; grid-template-columns: auto auto;">
-        <div>
-            <table>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-            </table>
+        <div class = "row" id = "pc_0">
+            <div class="col-6">
+                <table class = "table table-striped " id = "pc0"></table>
+            </div>
+            <div class="col-6" id="pc_1">
+                <table  class = "table table-striped " id = "pc1"></table>
+            </div>
 
         </div>
-        <div>
-            <label for="" > Ki resultante de la permutacion de Ci y Di</label>
-            <br>
-            <label for="" id = "kiResultante"> Aqui debe ir el Ki resultante</label>
-        </div>
+
+        <div id = "rotacionKI">
+            <select class = "select_rotacion" name="rotacion" id="rotacionesDb" onchange="cambioDropBoxRotaciones()">
+                <option value="1" > Rotacion 1</option>
+                <option value="2"> Rotacion 2</option>
+                <option value="3"> Rotacion 3</option>
+                <option value="4"> Rotacion 4</option>
+            </select>
+        <label for="" id = "rotacionElegida" style="margin-left: 50px; font-size: large;font-weight: bold;"> Esta es la rotacion elegida: </label>
+
         
-    </div>
-    
-    </div>
+        <div class = "row text-center"  >
+            <div class = "col-4 mx-auto ">
 
-    
-    
+                <label for=""> Este es Ci</label>
+                <table class = "table table-striped" id = "tablaCi"></table>
+
+                <label for=""> Este es Di</label>
+                <table class = "table table-striped" id = "tablaDi"></table>
+
+            </div>
+
+            <div class="col-8">
+                <label for="" class="label" id = "KiRes"> Ki resultante de la permutacion de Ci y Di</label>
+                <br>
+                <label for="" id = "kiResultante"> Aqui debe ir el Ki resultante</label>
+            </div>
+            <div class = "row" style="background-color: aquamarine;">
+                <label for=""> Mensaje a Cifrar</label><br>
+                <label for="">IP(M) </label><br>
+                
+            
+            </div>
+        </div>
+    </div>
 </body>
+
 <script src="./main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
