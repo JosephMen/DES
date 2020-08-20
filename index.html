@@ -15,26 +15,21 @@
     <div class="container">
         <p>Proyecto DES: Frander Mena y Keyla Alvarez Kenner Ortiz</p>
         <div id="entradas" class="row">
-            <div class="col-6 ">
+            <div class="col-6 text-left ">
                 <form>
                     <label for="Entrada" class="entrys lbl_entrada" id="mensaje">Mensaje</label>
                     <input type="text" name="" id="entrada">
-                    <<<<<<< HEAD <label class="salida_binaria" id="mensaje_bin"> Mensaje en Binario</label>
-                        =======
-                        <label class="salida_binaria"> Mensaje en Binario</label>
-                        >>>>>>> [add] fix div and add elements
-                        <br>
-
-                        <label for="Entrada" class="entrys lbl_entrada">Clave</label>
-                        <input type="text" name="" id="clave">
-                        <label class="salida_binaria"> Clave en Binario</label> <br>
-                        <div class="text-center" style="margin-top: 10px;">
-                            <input type="button" class="btn btn-success procesar mx-auto" value="Procesar"
-                                id="procesar">
-                        </div>
+                    <label class="salida_binaria" id="mensaje_bin"> Mensaje en Binario</label>
+                    <br>
+                    <label for="Entrada" class="entrys lbl_entrada">Clave</label>
+                    <input type="text" name="" id="clave">
+                    <label class="salida_binaria"> Clave en Binario</label> <br>
+                    <div class="text-center" style="margin-top: 10px;">
+                        <input type="button" class="btn btn-success procesar mx-auto" value="Procesar" id="procesar">
+                    </div>
 
 
-                        <!-- <label for="" id = "salidaMensaje">Aqui va la salida del mensaje</label>
+                    <!-- <label for="" id = "salidaMensaje">Aqui va la salida del mensaje</label>
                     <label for="" id = "salidaClave"> Aqui va la salida de la clave</label> -->
 
                 </form>
@@ -51,79 +46,73 @@
             </div>
 
         </div>
-
-        <<<<<<< HEAD <div id="rotacionKI">
+        <div id="rotacionKI">
             <select class="select_rotacion" name="rotacion" id="rotacionesDb" onchange="cambioDropBoxRotaciones()">
-                =======
-                <div id="rotacionKI">
-                    <select class="select_rotacion" name="rotacion" id="rotacionesDb"
-                        onchange="cambioDropBoxRotaciones()">
-                        >>>>>>> [add] fix div and add elements
-                        <option value="1"> Rotacion 1</option>
-                        <option value="2"> Rotacion 2</option>
-                        <option value="3"> Rotacion 3</option>
-                        <option value="4"> Rotacion 4</option>
-                        <option value="4"> Rotacion 5</option>
-                        <option value="4"> Rotacion 6</option>
-                        <option value="4"> Rotacion 7</option>
-                        <option value="4"> Rotacion 8</option>
-                        <option value="4"> Rotacion 9</option>
-                        <option value="4"> Rotacion 10</option>
-                        <option value="4"> Rotacion 11</option>
-                        <option value="4"> Rotacion 12</option>
-                        <option value="4"> Rotacion 13</option>
-                        <option value="4"> Rotacion 14</option>
-                        <option value="4"> Rotacion 15</option>
-                        <option value="4"> Rotacion 16</option>
-                    </select>
-                    <label for="" id="rotacionElegida" style="margin-left: 50px; font-size: large;font-weight: bold;">
-                        Esta es
-                        la rotacion elegida: </label>
+                <option value="1"> Rotacion 1</option>
+                <option value="2"> Rotacion 2</option>
+                <option value="3"> Rotacion 3</option>
+                <option value="4"> Rotacion 4</option>
+                <option value="4"> Rotacion 5</option>
+                <option value="4"> Rotacion 6</option>
+                <option value="4"> Rotacion 7</option>
+                <option value="4"> Rotacion 8</option>
+                <option value="4"> Rotacion 9</option>
+                <option value="4"> Rotacion 10</option>
+                <option value="4"> Rotacion 11</option>
+                <option value="4"> Rotacion 12</option>
+                <option value="4"> Rotacion 13</option>
+                <option value="4"> Rotacion 14</option>
+                <option value="4"> Rotacion 15</option>
+                <option value="4"> Rotacion 16</option>
+            </select>
+            <label for="" id="rotacionElegida" style="margin-left: 50px; font-size: large;font-weight: bold;">
+                Esta es
+                la rotacion elegida: </label>
 
 
-                    <div class="row text-center">
-                        <div class="col-4 mx-auto ">
+            <div class="row text-center">
+                <div class="col-4 mx-auto ">
 
-                            <label for=""> Este es Ci</label>
-                            <table class="table table-striped" id="tablaCi"></table>
+                    <label for=""> Este es Ci</label>
+                    <table class="table table-striped" id="tablaCi"></table>
 
-                            <label for=""> Este es Di</label>
-                            <table class="table table-striped" id="tablaDi"></table>
+                    <label for=""> Este es Di</label>
+                    <table class="table table-striped" id="tablaDi"></table>
 
-                        </div>
-
-                        <div class="col-8">
-                            <label for="" class="label" id="KiRes"> Ki resultante de la permutacion de Ci y Di</label>
-                            <br>
-                            <label for="" id="kiResultante"> Aqui debe ir el Ki resultante</label>
-                        </div>
-
-                    </div>
-                    <div class="row" style="background-color: aquamarine;">
-                        <div class="col-6 text-left">
-                            <label for=""> Mensaje a Cifrar</label><br>
-                            <label for="">IP(Mensaje)</label><br>
-                            <select class="select-class" name="selectId" id="selectId">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <label for="selectId">Mensaje aqui :v</label>
-
-                            <label class="lbl_encirpt">Ri</label>
-                            <label class="lbl_encirpt">Li</label>
-                            <label class="lbl_encirpt">E(Ri)</label>
-                            <label class="lbl_encirpt">Ki</label>
-                            <label class="lbl_encirpt">E(Ri) XOR Ki</label>
-                            <label class="lbl_encirpt">Resultado Cajas</label>
-                            <label class="lbl_encirpt">Resultado permutacion</label>
-                            <label class="lbl_encirpt">Li</label>
-                            <label class="lbl_encirpt">Resultado Xor con Li</label>
-                            <label class="lbl_encirpt">Li = Ri </label>
-                            <label class="lbl_encirpt">Ri = Resultado final</label>
-                        </div>
-                    </div>
                 </div>
+
+                <div class="col-8">
+                    <label for="" class="label" id="KiRes"> Ki resultante de la permutacion de Ci y Di</label>
+                    <br>
+                    <label for="" id="kiResultante"> Aqui debe ir el Ki resultante</label>
+                </div>
+
+            </div>
+            <div class="row" style="background-color: aquamarine;">
+                <div class="col-6 text-left">
+                    <label for=""> Mensaje a Cifrar</label><br>
+                    <label for="">IP(Mensaje)</label><br>
+                    <select class="select-class" name="selectId" id="selectId">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="selectId">Mensaje aqui :v</label>
+
+                    <label class="lbl_encirpt">Ri</label>
+                    <label class="lbl_encirpt">Li</label>
+                    <label class="lbl_encirpt">E(Ri)</label>
+                    <label class="lbl_encirpt">Ki</label>
+                    <label class="lbl_encirpt">E(Ri) XOR Ki</label>
+                    <label class="lbl_encirpt">Resultado Cajas</label>
+                    <label class="lbl_encirpt">Resultado permutacion</label>
+                    <label class="lbl_encirpt">Li</label>
+                    <label class="lbl_encirpt">Resultado Xor con Li</label>
+                    <label class="lbl_encirpt">Li = Ri </label>
+                    <label class="lbl_encirpt">Ri = Resultado final</label>
+                </div>
+            </div>
+        </div>
 </body>
 
 <script src="./main.js"></script>
