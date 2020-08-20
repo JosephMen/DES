@@ -34,6 +34,7 @@ table{
 }
 td{
     border: black solid;
+    font-weight: bold;
 }
 
 #KiRes{
