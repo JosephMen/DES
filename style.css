@@ -42,6 +42,18 @@ td{
     font-weight: bold;
 }
 
+.select-class{
+    width: 50%;
+}
+
+.div-ejemplo{
+    display: inline;
+}
+
+.lbl_encirpt{
+    width: 100%;
+}
+
 /*
 #rotacionKI{
     background-color: lightcoral;
